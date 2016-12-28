@@ -1,17 +1,20 @@
 [
     {
+        "id": 1,
         "name": "VOUCHER",
         "type": "xfory",
         "x": 2,
         "y": 1,
         "unitPrice": 5
     },{
+        "id": 2,
         "name": "TSHIRT",
         "type": "bulk",
         "bulkNumber": 3,
         "bulkPrice": 19,
         "unitPrice": 20
     },{
+        "id": 3,
         "name": "MUG",
         "type": "unit",
         "unitPrice": 7.5
