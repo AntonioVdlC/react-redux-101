@@ -1,2 +1,2 @@
 export { default as addToCart } from './addToCart'
-export { default as receiveProducts } from './receiveProducts'
+export { default as getProducts } from './receiveProducts'

@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 
-import Cart from './components/Cart'
+import CartContainer from './containers/CartContainer'
 import Header from './components/Header'
 import Intro from './components/Intro'
-import ProductList from './components/ProductList'
+import ProductContainer from './containers/ProductContainer'
 
 import './App.css'
 
@@ -17,8 +17,8 @@ class App extends Component {
                 <Intro>
                     You can add products to your cart and see your receipt update in real time thanks to the magic of React and Redux!
                 </Intro>
-                <ProductList />
-                <Cart />
+                <ProductContainer />
+                <CartContainer />
             </div>
         )
     }

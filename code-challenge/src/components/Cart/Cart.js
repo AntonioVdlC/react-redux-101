@@ -9,13 +9,19 @@ import './Cart.css'
 const Cart = ({ products, total }) => {
     const hasProducts = products.length > 0
     const nodes = hasProducts ? (
-        products.map((product) =>
-            <CartItem
-                key={product.id}
-                name={product.name}
-                price={product.price}
-            />
-        )
+        <div>
+            {products.map((product, index) =>
+                <CartItem
+                    key={index}
+                    name={product.name}
+                    unitPrice={product.unitPrice}
+                />
+            )}
+
+            <p className="cart-total">
+                Total: {total}
+            </p>
+        </div>
     ) : (
         <em>Please add some products to the cart.</em>
     )
@@ -26,9 +32,6 @@ const Cart = ({ products, total }) => {
             <div>
                 {nodes}
             </div>
-            <p className="cart-total">
-                Total: {total}
-            </p>
         </div>
     )
 }
@@ -37,7 +40,7 @@ Cart.propTypes = {
     products: React.PropTypes.arrayOf(React.PropTypes.shape({
         id: React.PropTypes.number.isRequired,
         name: React.PropTypes.string.isRequired,
-        price: isCurrency.isRequired,
+        unitPrice: isCurrency.isRequired,
     })).isRequired,
     total: isCurrency.isRequired,
 }

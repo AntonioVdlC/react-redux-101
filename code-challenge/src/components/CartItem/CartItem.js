@@ -4,15 +4,15 @@ import isCurrency from './../../utils/isCurrency'
 
 import './CartItem.css'
 
-const CartItem = ({ name, price }) => (
+const CartItem = ({ name, unitPrice }) => (
     <p className="cart-item">
-        {name} - {price}
+        {name} - {unitPrice}
     </p>
 )
 
 CartItem.propTypes = {
     name: React.PropTypes.string.isRequired,
-    price: isCurrency.isRequired
+    unitPrice: isCurrency.isRequired,
 }
 
 export default CartItem
