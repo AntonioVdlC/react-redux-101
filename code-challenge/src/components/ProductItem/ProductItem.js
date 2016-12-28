@@ -17,7 +17,7 @@ ProductItem.propTypes = {
         name: React.PropTypes.string.isRequired,
         unitPrice: isCurrency.isRequired,
     }).isRequired,
-    onAddToCartClicker: React.PropTypes.func.isRequired
+    onAddToCartClicked: React.PropTypes.func.isRequired
 }
 
 export default ProductItem
