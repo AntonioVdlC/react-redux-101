@@ -12,6 +12,7 @@ function getTotal(cart) {
 export default (state = initialState, action) => {
     switch (action.type) {
         case ADD_TO_CART:
+            // TODO - Recalculate all the unit prices
             const newCart = [...state.products, action.product]
             return {
                 products: newCart,
