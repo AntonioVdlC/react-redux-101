@@ -5,10 +5,10 @@ import formatCurrency from './../../utils/formatCurrency'
 import './ProductItem.css'
 
 const ProductItem = ({ product, onAddToCartClicked }) => (
-    <div className="product-item">
+    <li className="product-item">
         <p>{product.name} - {formatCurrency('€', product.unitPrice)}</p>
         <button onClick={onAddToCartClicked}>Add To Cart</button>
-    </div>
+    </li>
 )
 
 ProductItem.propTypes = {

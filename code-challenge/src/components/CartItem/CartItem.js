@@ -5,9 +5,9 @@ import formatCurrency from './../../utils/formatCurrency'
 import './CartItem.css'
 
 const CartItem = ({ name, unitPrice }) => (
-    <p className="cart-item">
+    <li className="cart-item">
         {name} - {formatCurrency('€', unitPrice)}
-    </p>
+    </li>
 )
 
 CartItem.propTypes = {
