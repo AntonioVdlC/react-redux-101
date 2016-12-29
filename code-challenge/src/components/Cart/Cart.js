@@ -1,8 +1,7 @@
 import React from 'react'
 
 import CartItem from './../CartItem'
-
-import isCurrency from './../../utils/isCurrency'
+import CartTotal from './../CartTotal'
 
 import './Cart.css'
 
@@ -17,10 +16,7 @@ const Cart = ({ products, total }) => {
                     unitPrice={product.unitPrice}
                 />
             )}
-
-            <p className="cart-total">
-                Total: {total}
-            </p>
+            <CartTotal total={total} />
         </div>
     ) : (
         <em>Please add some products to the cart.</em>
@@ -40,9 +36,9 @@ Cart.propTypes = {
     products: React.PropTypes.arrayOf(React.PropTypes.shape({
         id: React.PropTypes.number.isRequired,
         name: React.PropTypes.string.isRequired,
-        unitPrice: isCurrency.isRequired,
+        unitPrice: React.PropTypes.number.isRequired,
     })).isRequired,
-    total: isCurrency.isRequired,
+    total: React.PropTypes.number.isRequired,
 }
 
 export default Cart
