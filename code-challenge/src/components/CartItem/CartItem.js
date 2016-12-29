@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 import formatCurrency from './../../utils/formatCurrency'
 
@@ -11,8 +11,8 @@ const CartItem = ({ name, unitPrice }) => (
 )
 
 CartItem.propTypes = {
-    name: React.PropTypes.string.isRequired,
-    unitPrice: React.PropTypes.number.isRequired,
+    name: PropTypes.string.isRequired,
+    unitPrice: PropTypes.number.isRequired,
 }
 
 export default CartItem

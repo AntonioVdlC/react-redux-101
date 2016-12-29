@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 import './Header.css'
 
@@ -9,7 +9,7 @@ const Header = ({ title }) => (
 )
 
 Header.propTypes = {
-    title: React.PropTypes.string.isRequired
+    title: PropTypes.string.isRequired
 }
 
 export default Header

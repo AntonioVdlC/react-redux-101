@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 import './Intro.css'
 
@@ -9,7 +9,7 @@ const Intro = ({ children }) => (
 )
 
 Intro.propTypes = {
-    children: React.PropTypes.node
+    children: PropTypes.node
 }
 
 export default Intro

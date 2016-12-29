@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 import ProductItem from './../ProductItem'
 
@@ -17,12 +17,12 @@ const ProductList = ({ products, addToCart }) => (
 )
 
 ProductList.propTypes = {
-    products: React.PropTypes.arrayOf(React.PropTypes.shape({
-        id: React.PropTypes.number.isRequired,
-        name: React.PropTypes.string.isRequired,
-        unitPrice: React.PropTypes.number.isRequired,
+    products: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        unitPrice: PropTypes.number.isRequired,
     })).isRequired,
-    addToCart: React.PropTypes.func.isRequired,
+    addToCart: PropTypes.func.isRequired,
 }
 
 export default ProductList

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 
 import CartItem from './../CartItem'
 import CartTotal from './../CartTotal'
@@ -33,12 +33,12 @@ const Cart = ({ products, total }) => {
 }
 
 Cart.propTypes = {
-    products: React.PropTypes.arrayOf(React.PropTypes.shape({
-        id: React.PropTypes.number.isRequired,
-        name: React.PropTypes.string.isRequired,
-        unitPrice: React.PropTypes.number.isRequired,
+    products: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        name: PropTypes.string.isRequired,
+        unitPrice: PropTypes.number.isRequired,
     })).isRequired,
-    total: React.PropTypes.number.isRequired,
+    total: PropTypes.number.isRequired,
 }
 
 export default Cart
