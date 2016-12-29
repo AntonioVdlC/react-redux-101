@@ -2,7 +2,7 @@ import { ADD_TO_CART } from './../actions/types'
 
 const initialState = {
     products: [],
-    total: '0,00€'
+    total: 0,
 }
 
 function getTotal(cart) {
