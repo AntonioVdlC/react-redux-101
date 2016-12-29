@@ -1,8 +1,8 @@
 import { connect } from 'react-redux'
 
-import Cart from './../../components/Cart'
+import byName from './../../utils/sortByName'
 
-const byName = (a, b) => (a.name > b.name) ? 1 : (a.name < b.name) ? -1 : 0
+import Cart from './../../components/Cart'
 
 const mapStateToProps = (state) => ({
     products: state.cart.products.slice().sort(byName),
