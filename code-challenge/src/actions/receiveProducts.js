@@ -2,7 +2,7 @@ import api from './../api'
 
 import { RECEIVE_PRODUCTS } from './types'
 
-const receiveProducts = (products) => ({
+export const receiveProducts = (products) => ({
     type: RECEIVE_PRODUCTS,
     products,
 })
