@@ -1,1 +1,1 @@
-export { default as default } from './Intro'
+export { default } from './Intro'

@@ -1,1 +1,1 @@
-export { default as default } from './GreetingContainer'
+export { default } from './GreetingContainer'
