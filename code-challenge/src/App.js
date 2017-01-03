@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 import CartContainer from './containers/CartContainer'
 import Header from './components/Header'
