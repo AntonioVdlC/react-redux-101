@@ -1,1 +1,1 @@
-export { default as default } from './formatCurrency'
+export { default } from './formatCurrency'

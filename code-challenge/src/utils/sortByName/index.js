@@ -1,1 +1,1 @@
-export { default as default } from './sortByName'
+export { default } from './sortByName'
